@@ -1,9 +1,14 @@
+import styles from './Home.module.css'
+import savings from '../../img/savings.svg'
+
 function Home() {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of the application.</p>
-    </div>
+    <section className={styles.home_container}>
+      <h1>Bem-vindo ao <span>Costs</span></h1>
+      <p>Comece a gerenciar os seus projetos agora mesmo!</p>
+      <a href='/'>Criar projetos</a>
+      <img src={savings} alt='Costs' />
+    </section>
   )
 }
 
